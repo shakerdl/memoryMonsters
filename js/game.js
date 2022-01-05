@@ -63,8 +63,11 @@ class Flipper {
         this.flip(this.target);
       }, this.volocity);
     } else {
+      // here im assain it to the first deg after it loop
       this.currectDeg = this.degStart;
+      // here im release lock 
       this.stoped = false;
+      // this is fot for return the Previous card back to Null
       if(typeof this.finish ==="function"){
         this.finish();
       }
